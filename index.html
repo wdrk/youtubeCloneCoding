@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/18514bbc93.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Youtube Clone</title>
 </head>
 <body>
@@ -20,8 +24,79 @@
   </header>
 
   <!-- Video Player -->
-  <section class="player"></section>
-  <section class="info"></section>
-  <section class="upNext"></section>
+  <section class="player">
+    <video controls src="video/cute.mp4"></video>
+  </section>
+
+  <!-- Video Info -->
+  <section class="info">
+    <!-- Metadata -->
+    <div class="metadata">
+      <ul class="hashtags">
+        <li>#HelloWorld</li>
+        <li>#Wanted</li>
+        <li>#LetsTogether</li>
+      </ul>
+      <div class="titleAndButton">
+        <span class="title">
+          Youtube Clone Coding/유튜브 클론코딩/반응형 모바일 페이지 만들기/HTML,CSS,Javascript
+        </span>
+        <button class="moreBtn">
+          <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="views">1M views 1 month ago</div>
+    </div>
+    <!-- Actions -->
+    <div class="actions">
+      <li>
+        <button><i class="fas fa-thumbs-up"></i><span>1K</span></button>
+      </li>
+      <li>
+        <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+      </li>
+      <li>
+        <button><i class="fas fa-share"></i><span>Share</span></button>
+      </li>
+      <li>
+        <button><i class="fas fa-plus"></i><span>Save</span></button>
+      </li>
+      <li>
+        <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+      </li>
+    </div>
+    <!-- Channel Description -->
+    <div class="channel">
+      <div class="metadata">
+        <img src="image/why.jpeg" alt="">
+        <div class="info">
+          <span class="name">전혀 웃을 수 없는</span>
+          <span class="subscribers">1M subscribers</span>
+        </div>
+      </div>
+      <button class="subscribe">subscribe</button>
+    </div>
+  </section>
+  <!-- Up Next -->
+  <section class="upNext">
+    <span class="title">Up next</span>
+    <ul>
+      <li class="item">
+        <img src="image/curiositySelfie.jpg" alt="">
+        <div class="info">[큐리오시티] 화성에서 보내 온 셀카</div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="item">
+        <img src="image/dancingInStadium.gif" alt="">
+        <div class="info">하라는 야구는 안하고 춤을..</div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+      <li class="item">
+        <img src="image/dotArt.jpg" alt="">
+        <div class="info">이렇게 하면 실력이 늘 거에요!| 도트찍기 연습법|튜토리얼</div>
+        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+      </li>
+    </ul>
+  </section>
 </body>
 </html>
