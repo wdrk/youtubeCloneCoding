@@ -25,7 +25,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -67,8 +67,9 @@ header .icons .fa-search {
 
 /* Video Player */
 .player {
-  position: sticky;
-  top: 0;
+  /* !완성 후 주석 풀어야 함 */
+  /* position: sticky;
+  top: 0; */
   text-align: center;
   background-color: var(--black-color);
 }
@@ -76,10 +77,10 @@ header .icons .fa-search {
 .player video {
   width: 100%;
   height: 100%;
-  max-width: 400px;
+  max-width: 1000px;
 }
 
-body .infoAndUpNext {
+body > .info {
   padding: var(--padding);
 }
 
@@ -126,13 +127,12 @@ body .infoAndUpNext {
   display: flex;
   flex-direction: column;
   font-size: var(--font-small);
-  color: var(--grey-dark-color);
 }
 
 .info .actions button i {
   margin: 0 auto;
   margin-bottom: calc(var(--padding) / 2);
-  font-size: var(--font-medium);
+  font-size: 16px;
 }
 
 .info .actions button i.active {
@@ -140,47 +140,45 @@ body .infoAndUpNext {
 }
 
 /* Channel Description */
-
-.info .channel {
+.channel {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--grey-light-color);
   border-bottom: 1px solid var(--grey-light-color);
 }
 
-.info .channel .metadata {
+.channel .metadata {
   display: flex;
   align-items: center;
 }
 
-.info .channel .metadata img {
+.channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel .metadata img {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
 }
 
-.info .channel .metadata .info {
-  display: flex;
-  flex-direction: column;
-}
-
-.info .channel .metadata .info .name {
+.channel .metadata .info .name {
   font-size: var(--font-medium);
 }
 
-.info .channel .metadata .info .subscribers {
+.channel .metadata .info .subscribers {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
-
-.info .channel .subscribe {
+.channel .subscribe {
   text-transform: uppercase;
   color: var(--red-color);
   font-size: var(--font-medium);
-  margin: var(--padding);
 }
 
 /* Up Next */
+
 .upNext {
   padding: 0 var(--padding);
 }
@@ -188,7 +186,7 @@ body .infoAndUpNext {
 .upNext > .title {
   font-size: var(--font-medium);
   color: var(--grey-dark-color);
-  margin-bottom: calc(var(--padding) / 2);
+  margin-bottom: var(--padding) /2);
 }
 
 .upNext .item {
@@ -204,17 +202,15 @@ body .infoAndUpNext {
 .upNext .item .img img {
   width: 100%;
 }
+
 .upNext .item .info {
-  flex: 1 1 60%;
+  flex: 1 1 65%;
+  display: flex;
+  flex-direction: column;
 }
 
 .upNext .item .moreBtn {
   flex: 1 1 5%;
-}
-
-.upNext .item .info {
-  display: flex;
-  flex-direction: column;
 }
 
 .upNext .item .info .title {
@@ -225,4 +221,8 @@ body .infoAndUpNext {
 .upNext .item .info .views {
   font-size: var(--font-micro);
   color: var(--grey-dark-color);
+}
+
+.upNext .item .moreBtn {
+  height: 100%;
 }
