@@ -197,7 +197,7 @@ header .icons .fa-search {
 .upNext > .title {
   font-size: var(--font-medium);
   color: var(--grey-dark-color);
-  margin-bottom: var(--padding) /2);
+  margin-bottom: var((--padding) /2);
 }
 
 .upNext .item {
