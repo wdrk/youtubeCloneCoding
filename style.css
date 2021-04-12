@@ -84,58 +84,67 @@ header .icons .fa-search {
   padding: var(--padding);
 }
 
-.info .metadata .hashtags {
+.infoAndUpNext .info .metadata .hashtags {
   display: flex;
   font-size: var(--font-small);
   color: var(--blue-color);
 }
 
-.info .metadata .hashtags li {
+.infoAndUpNext .info .metadata .hashtags li {
   margin-right: var(--padding);
 }
 
-.info .metadata .titleAndButton {
+.infoAndUpNext .info .metadata .titleAndButton {
   display: flex;
 }
 
-.info .metadata .titleAndButton .title {
+.infoAndUpNext .info .metadata .titleAndButton .title {
   font-size: var(--font-medium);
+  margin-right: var(--padding);
+}
+
+.infoAndUpNext .info .metadata .titleAndButton .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  margin-right: var(--padding);
 }
 
-.info .metadata .titleAndButton .moreBtn {
+.infoAndUpNext .info .metadata .titleAndButton .moreBtn {
   height: 100%;
+  transform: rotate(180deg);
+  transition: 300ms ease-in-out;
 }
 
-.info .views {
+.infoAndUpNext .info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(360deg);
+}
+
+.infoAndUpNext .info .views {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
 
 /* Action Buttons */
-.info .actions {
+.infoAndUpNext .info .actions {
   display: flex;
   justify-content: space-around;
   margin: var(--padding) 0;
 }
 
-.info .actions button {
+.infoAndUpNext .info .actions button {
   display: flex;
   flex-direction: column;
   font-size: var(--font-small);
 }
 
-.info .actions button i {
+.infoAndUpNext .info .actions button i {
   margin: 0 auto;
   margin-bottom: calc(var(--padding) / 2);
   font-size: 16px;
 }
 
-.info .actions button i.active {
+.infoAndUpNext .info .actions button i.active {
   color: var(--blue-color);
 }
 
