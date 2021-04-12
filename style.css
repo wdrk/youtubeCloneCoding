@@ -80,7 +80,7 @@ header .icons .fa-search {
   max-width: 1000px;
 }
 
-body > .info {
+.infoAndUpNext > .info {
   padding: var(--padding);
 }
 
@@ -143,6 +143,7 @@ body > .info {
 .channel {
   display: flex;
   justify-content: space-between;
+  padding: calc(var(--padding) / 2) 0;
   border-top: 1px solid var(--grey-light-color);
   border-bottom: 1px solid var(--grey-light-color);
 }
@@ -161,6 +162,7 @@ body > .info {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
+  margin-right: var(--padding);
 }
 
 .channel .metadata .info .name {
@@ -210,6 +212,7 @@ body > .info {
 }
 
 .upNext .item .moreBtn {
+  height: 100%;
   flex: 1 1 5%;
 }
 
@@ -223,6 +226,18 @@ body > .info {
   color: var(--grey-dark-color);
 }
 
-.upNext .item .moreBtn {
-  height: 100%;
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
+
+  .infoAndUpNext .upNext {
+    margin: var(--padding) 0;
+  }
 }
