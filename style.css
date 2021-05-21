@@ -28,7 +28,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-ul {
+li {
   list-style: none;
 }
 
@@ -109,4 +109,28 @@ header .icons .fa-search {
 .info .views {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.actions button i {
+  margin: 0 auto; /* 아이콘을 가운데로 오게 하는 좋은 팁 */
+  margin-bottom: calc(var(--padding) / 2);
+  font-size: 16px;
+}
+
+.actions button i.active {
+  color: var(--blue-color);
 }
